@@ -21,19 +21,5 @@ namespace RoverChallenge.Domain.Tests
             // Assert
             Assert.IsNotNull(exception);
         }
-
-        [Test]
-        public void Rover_With_Null_Navigation_Landing_Should_Throw_ArgumentNullException()
-        {
-            // Arrange
-            var landingPosition = new Position(new Coordinate(0, 0), CardinalPoint.North);
-
-
-            // Act
-            var exception = Assert.Throws<ArgumentNullException>(() => new Rover(null, null));
-
-            // Assert
-            Assert.IsNotNull(exception);
-        }
     }
 }

@@ -1,12 +1,11 @@
-using NUnit.Framework;
-using RoverChallenge.Domain.ValueTypes;
-
 namespace RoverChallenge.Domain.Tests
 {
+    using NUnit.Framework;
+    using RoverChallenge.Domain.ValueTypes;
+
     public class RoverRotateRigthTests
     {
         private NavigationMap map = new(100, 100);
-
 
         [Test]
         public void Rover_Pointing_North_Should_Turn_East_On_Right_Rotation()

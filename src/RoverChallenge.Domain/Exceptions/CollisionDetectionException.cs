@@ -7,6 +7,9 @@ namespace RoverChallenge.Domain
     {
         public CollisionDetectionException(Coordinate obstaclePoint) : base($"Detected obstacle on X:{obstaclePoint.X} - Y:{obstaclePoint.Y}")
         {
+            ObstaclePoint = obstaclePoint;
         }
+
+        public Coordinate ObstaclePoint { get; }
     }
 }
