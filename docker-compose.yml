@@ -1,0 +1,4 @@
+services:
+  tests:
+    build: ./src
+    command: dotnet test
